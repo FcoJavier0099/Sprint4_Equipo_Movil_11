@@ -1,0 +1,18 @@
+{
+  "places":[
+    {
+      "tittle":"Niyaz",
+      "detail":"testemail1@gmail.com",
+      "image":"R.drawable.ic_launcher_foreground"
+    },
+    {
+      "tittle":"Azhar",
+      "detail":"testemail2@gmail.com",
+      "image":"R.drawable.ic_launcher_foreground"
+    },
+    {
+      "tittle":"Mahi",
+      "detail":"testemail3@gmail.com",
+      "image":"R.drawable.ic_launcher_foreground"
+    }  ]
+}
