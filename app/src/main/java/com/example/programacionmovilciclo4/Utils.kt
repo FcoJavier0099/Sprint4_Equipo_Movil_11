@@ -11,7 +11,7 @@ class Utils ( val context: Context) {
 //    }
 
     fun loadJsonFromAssets(context: Context, fileName: String): String{
-        var json: String? = null
+        var json: String?
         try {
             val inputStream: InputStream = context.assets.open(fileName)
             val size = inputStream.available()
