@@ -5,10 +5,7 @@ import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.Charset
 
-class Utils ( val context: Context) {
-//    fun getFlowersList(): Array<String> {
-//        return context.resources.getStringArray(R.array.flower_array)
-//    }
+class Utils  {
 
     fun loadJsonFromAssets(context: Context, fileName: String): String{
         var json: String?

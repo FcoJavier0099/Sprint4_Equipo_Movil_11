@@ -1,29 +1,18 @@
 package com.example.programacionmovilciclo4
 
-import android.content.Context
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import org.json.JSONObject
-import java.io.BufferedReader
-import java.io.IOException
-import java.io.InputStream
-import java.nio.channels.DatagramChannel.open
-import java.nio.channels.Pipe.open
-import java.nio.charset.Charset
 
 class CustomAdapter(
-    private var context: Context,
+    private var context: PrincipalFragment,
     private var lugares: ArrayList<LugaresSanAndres>
-    //private var details: ArrayList<String>,
-    //private var puntuacion: ArrayList<String>
-    //private var images: ArrayList<String>
-
 ): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
@@ -34,16 +23,15 @@ class CustomAdapter(
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val lugar = lugares[position]
         viewHolder.bind(lugar = lugar)
-//        viewHolder.itemTitle.text = nombres[i]
-//        viewHolder.itemDetail.text = details[i]
-//        viewHolder.itemPuntuacion.text = puntuacion[i]
-//        //viewHolder.itemImage.setImageResource(Integer.parseInt(images[i]))
-//        Glide.with(context)
-//            .load("https://cdn.pixabay.com/photo/2021/11/08/23/29/nature-6780354_960_720.jpg")
-//            .into(viewHolder.itemImage)
-//        viewHolder.itemView.setOnClickListener {
-//            Toast.makeText(context, nombres[i], Toast.LENGTH_SHORT).show()
-//        }
+        viewHolder.itemView.setOnClickListener { v ->
+            if (v != null) {
+                val bundle = Bundle().apply {
+                    putInt("posicion", position)
+                }
+                Navigation.findNavController(v).navigate(R.id.action_principalFragment_to_vistaFragment, bundle)
+            }
+        }
+
     }
 
     override fun getItemCount(): Int {

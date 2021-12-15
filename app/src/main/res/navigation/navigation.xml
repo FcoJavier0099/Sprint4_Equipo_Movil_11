@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.programacionmovilciclo4.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.example.programacionmovilciclo4.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_vistaFragment"
+            app:destination="@id/vistaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vistaFragment"
+        android:name="com.example.programacionmovilciclo4.VistaFragment"
+        android:label="fragment_vista"
+        tools:layout="@layout/fragment_vista" >
+        <action
+            android:id="@+id/action_vistaFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+</navigation>
