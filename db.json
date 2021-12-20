@@ -1,0 +1,34 @@
+{
+  "places": [
+      {
+        "autor": "Fco Javier",
+        "nombre": "West View",
+        "urlFoto": "https://i.imgur.com/tQ0QFkZ.jpeg",
+        "comentario": "El punto West View, ubicado al oeste de la isla de San Andrés.",
+        "descripcion": "En West View puedes encontrar otra hermosa piscina natural en la isla de San Andrés. Los turistas se sienten atraídos por esta piscina en particular por las hermosas vistas del interminable océano en colores turquesa y azul intenso y también porque a diferencia de su hermana “La Piscinita”, esta piscina natural cuenta con solo tres metros de profundidad, lo cual facilita la visualización de sus maravillas submarinas sin la necesidad de descender mucho entre sus aguas.",
+        "puntuacion": 4.5
+      },
+      {
+        "nombre": "Hoyo soplador",
+        "urlFoto": "https://i.imgur.com/geqcPAZ.jpeg",
+        "comentario": "Es fenómeno natural que consiste en un agujero en la playa.",
+        "descripcion": "Está ubicado en la punta sur de la Isla. Se trata de un fenómeno natural producido por una serie de túneles subterráneos que comienzan en los arrecifes coralinos y terminan en un solo agujero a varios metros del agua. Cuando la marea sube y una ola logra entrar con fuerza dentro de estos túneles, arroja el aire comprimido por el hoyo. Semeja un géiser al lado del mar y constituye un orgullo para los nativos.",
+        "puntuacion": 5
+      },
+      {
+        "nombre": "La piscinita",
+        "urlFoto": "https://i.imgur.com/U1dxwRU.jpeg",
+        "comentario": "Es uno de los dos balnearios ubicados en el oeste de la isla.",
+        "descripcion": "Consta de un tobogán y trampolin permitiendo el acceso a agua transparente con peces exóticos",
+        "puntuacion": 5
+      },
+      {
+        "autor": "Hector Mejia",
+        "nombre": "Johnny Cay",
+        "urlFoto": "https://i.imgur.com/7VRDZzW.jpeg",
+        "comentario": "En este lugar la playa es blanca, abundan las palmeras.",
+        "descripcion": "Johnny Cay, también conocido localmente como Islote Sucre, es el cayo más grande e importante cercano a la Isla de San Andrés. Tal es su importancia que se nombró como Parque Regional protegido, gracias a su biodiversidad y belleza. Es un paraíso que todo turista debe conocer en el archipiélago. Además de tomar un poco de sol, disfrutar de un Coco Loco, y degustar la gastronomía de la isla, también podrás sumergirte en el azul mar para observar la biodiversidad marina con snorkel, así podrás ver las bellezas de peces y mantarrayas que habitan en sus aguas.",
+        "puntuacion": 4
+      }
+  ]
+}
